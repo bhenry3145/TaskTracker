@@ -33,7 +33,6 @@ addCardBtn.addEventListener('click', () => {
     saveToLocalStorage(task);
     renderTask(task);
 
-    // Clear the form
     nameInput.value = '';
     descriptionInput.value = '';
     dateInput.value = '';
