@@ -21,7 +21,7 @@
             </div>
 
             <div class="flex justify-self-center col-span-4">
-                <div class="grid grid-cols-3 text-center border-2 border-black">
+                <div class="grid grid-cols-3 text-center">
                     <div id="toDo" class="text-5xl p-4 justify-self-center h-[600px] overflow-y-scroll">TO-DO</div>
                     <div id="inProgress" class="text-5xl p-4 h-[600px] overflow-y-scroll">IN PROGRESS</div>
                     <div id="completed" class="text-5xl p-4 h-[600px] overflow-y-scroll">COMPLETED</div>
@@ -31,14 +31,14 @@
 
         </div>
 
-        <div id="add" class="fixed inset-0 bg-blue-400 bg-opacity-50 z-50 hidden">
+        <div id="add" class="fixed inset-0 bg-green-400 bg-opacity-50 z-50 hidden">
             <div class="flex justify-center items-center h-full">
                 <div class="bg-[#FCFFA5] p-8 rounded-[15px] w-11/12 md:w-1/2 flex justify-self-center flex-col">
                     <div>
                         <button id="closeAdd" class="mt-4 text-black w-16 h-16 px-4 py-2 rounded">
                             X
                         </button>
-                        <h2 class="text-xl border rounded-[15px] text-center w-fit bg-[#FDFF7A] p-4 font-bold mb-4 justify-self-center">Fill In Task Info and Press Save</h2>
+                        <h2 class="text-xl border rounded-[15px] text-center w-fit bg-[#FDFF7A] p-4 font-bold mb-4 justify-self-center">Fill In Task Info and Press Add</h2>
                     </div>
                     <ul class="flex flex-col justify-center">
                         <input id="nameInput" type="text" class="border border-solid p-2 text-black" placeholder="Name">
