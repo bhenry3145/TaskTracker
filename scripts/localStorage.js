@@ -1,14 +1,7 @@
-function saveToLocalStorage(task){
-
-    let nameArr = getFromLocalStorage();
-
-    if (nameArr.includes(task)){
-        return;
-    }
-    
-    nameArr.push(task);
-    localStorage.setItem('Task', JSON.stringify(nameArr));
-
+function saveToLocalStorage(task) {
+    let tasks = getFromLocalStorage();
+    tasks.push(task);
+    localStorage.setItem('Task', JSON.stringify(tasks));
 }
 
 function getFromLocalStorage(){
@@ -35,7 +28,7 @@ function removeFromLocalStorage(task){
 
 function updateInLocalStorage(updatedTask) {
     let tasks = getFromLocalStorage();
-    tasks = tasks.map(task => task.name === updatedTask.name && task.description === updatedTask.description && task.dueDate === updatedTask.dueDate ? updatedTask : task);
+    tasks = tasks.map(task => task.id === updatedTask.id ? updatedTask : task);
     localStorage.setItem('Task', JSON.stringify(tasks));
 }
 

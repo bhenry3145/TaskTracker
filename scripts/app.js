@@ -23,6 +23,7 @@ closeAdd.addEventListener('click', () => {
 
 addCardBtn.addEventListener('click', () => {
     const task = {
+        id: Date.now(),
         name: nameInput.value,
         description: descriptionInput.value,
         dueDate: dateInput.value,
